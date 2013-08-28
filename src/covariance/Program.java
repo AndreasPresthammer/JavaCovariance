@@ -10,7 +10,7 @@ public class Program {
 		
 		List<? extends Super> list = subAList;
 
-		list.add(new SubA());
+		list.add(new SubA()); // <-- Notice that this doesn't compile
 		
 		for(Super s : list) {
 			System.out.println(s.toString());
